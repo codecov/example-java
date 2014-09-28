@@ -1,7 +1,7 @@
 language: java
 
 before_install:
-  sudo pip install git+git://github.com/codecov/codecov-python.git@java#egg=codecov
+  sudo pip install codecov
 
 after_success:
   codecov
