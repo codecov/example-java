@@ -1,7 +1,5 @@
 language: java
-
-before_install:
-  sudo pip install codecov
+sudo: false # faster builds
 
 after_success:
-  codecov
+  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/master/codecov)
