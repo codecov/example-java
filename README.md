@@ -33,18 +33,31 @@ Java -> Codecov.io
 ```
 
 
-# [![travis-org](https://avatars2.githubusercontent.com/u/639823?v=2&s=50)](https://travis-ci.org) Travis C
+# Travis CI
 
 Add to your `.travis.yml` file.
 ```yml
 language:
   java
 
-before_install:
-  sudo pip install codecov
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+
+> All other CI you can simply run `bash <(curl -s https://codecov.io/bash)`.
+
+## Private Repos
+
+Add to your `.travis.yml` file.
+```yml
+language:
+  java
+env:
+  global:
+    - CODECOV_TOKEN=:uuid-repo-token
 
 after_success:
-  codecov
+  - bash <(curl -s https://codecov.io/bash)
 ```
 
 

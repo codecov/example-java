@@ -1,9 +1,5 @@
 language: java
 sudo: false # faster builds
-env:
-  global:
-    - CODECOV_ENV=EXAMPLE
-    - EXAMPLE=Hello+World
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
