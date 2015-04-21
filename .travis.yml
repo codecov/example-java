@@ -2,9 +2,8 @@ language: java
 sudo: false # faster builds
 env:
   global:
-    - CODECOV_URL=https://codecov-staging.herokuapp.com
     - CODECOV_ENV=EXAMPLE
     - EXAMPLE=Hello+World
 
 after_success:
-  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/master/codecov)
+  - bash <(curl -s https://codecov.io/bash)
