@@ -31,6 +31,7 @@ This repository serves as an **Example** on how to use [Codecov Global][4] for J
   </executions>
 </plugin>
 ```
+> For the [newest version check here](http://www.eclemma.org/jacoco/)
 
 
 # Travis CI
