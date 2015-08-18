@@ -2,5 +2,5 @@ language: java
 sudo: false # faster builds
 
 after_success:
-  - pip install --user git+git://github.com/codecov/codecov-python.git@wip && codecov
   - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/wip/codecov)
+  - pip install --user git+git://github.com/codecov/codecov-python.git@wip && codecov
