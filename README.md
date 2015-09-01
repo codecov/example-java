@@ -1,10 +1,10 @@
-Codecov's Java Example
-======================
+Codecov Java Example
+====================
 
 | [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
 | ----------------------- | ------------- | --------------------- |
 
-This repository serves as an **Example** on how to use [Codecov Global][4] for Java.
+This repository serves as an **example** on how to use [Codecov Global][4] for Java.
 
 ## Usage
 
@@ -50,8 +50,6 @@ after_success:
 
 Add to your `.travis.yml` file.
 ```yml
-language:
-  java
 env:
   global:
     - CODECOV_TOKEN=:uuid-repo-token
@@ -60,7 +58,7 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
-View source and lean more about [Codecov Global Uploader][4]
+View source and learn more about [Codecov Global Uploader][4]
 
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
