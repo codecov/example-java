@@ -14,7 +14,7 @@ This repository serves as an **example** on how to use [Codecov Global][4] for J
 <plugin>
   <groupId>org.jacoco</groupId>
   <artifactId>jacoco-maven-plugin</artifactId>
-  <version>0.5.8.201207111220</version>
+  <version>0.7.5.201505241946</version>
   <executions>
     <execution>
       <goals>
