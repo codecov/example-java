@@ -18,5 +18,10 @@ public class HelloWorldTest {
 	public void testGetMessage() {
 		assertEquals("Hello World!", subject.getMessage(false));
 	}
+
+	@Test
+	public void testGetBiggerMessage() {
+		assertEquals("Hello Universe!", subject.getMessage(true));
+	}
 	
 }
