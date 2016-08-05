@@ -20,7 +20,13 @@ Please see [http://stackoverflow.com/questions/18107375/...](http://stackoverflo
 
 **Yes**, enter [codecov/example-gradle][2]
 
+####❔Is there a Android example?
+
+**Yes**, enter [codecov/example-android][2]
+
+
 
 [0]: https://codecov.io/
 [1]: https://github.com/codecov/example-java
 [2]: https://github.com/codecov/example-gradle
+[3]: https://github.com/codecov/example-android
