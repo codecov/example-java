@@ -1,61 +1,26 @@
-Codecov Java Example
-====================
+[Codecov][0] Java Example
+=========================
 
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
-| ----------------------- | ------------- | --------------------- |
-
-This repository serves as an **example** on how to use [Codecov Global][4] for Java.
-
-## Usage
+1. Add JaCoCo Plugin to your pom.xml file, [see here](https://github.com/codecov/example-java/blob/master/pom.xml#L38-L56)
+2. Call `bash <(curl -s https://codecov.io/bash) -t repository-upload-token` at the end of your CI build
+  - Is you repository public and tested with Travis, CircleCI or AppVeyor? Then the repository upload token is not required!
 
 
-### Add Jacoco plugin
-```xml
-<plugin>
-  <groupId>org.jacoco</groupId>
-  <artifactId>jacoco-maven-plugin</artifactId>
-  <version>0.7.5.201505241946</version>
-  <executions>
-    <execution>
-      <goals>
-        <goal>prepare-agent</goal>
-      </goals>
-    </execution>
-    <execution>
-      <id>report</id>
-      <phase>test</phase>
-      <goals>
-        <goal>report</goal>
-      </goals>
-    </execution>
-  </executions>
-</plugin>
-```
-> For the [newest version check here](http://www.eclemma.org/jacoco/)
+# Frequently Asked Questions
+
+####❔Seeing `Skipping JaCoCo execution due to missing execution data file`?
+
+Please see [http://stackoverflow.com/questions/18107375/...](http://stackoverflow.com/questions/18107375/getting-skipping-jacoco-execution-due-to-missing-execution-data-file-upon-exec)
+
+####❔Does Codecov accept `jacoco.exec` reports?
+
+**No**, these files are not supported. Please produce a `xml` file as detailed in the pom.xml file at [codecov/example-java][1]
+
+####❔Is there a Gradle example?
+
+**Yes**, enter [codecov/example-gradle][2]
 
 
-# Travis CI
-
-Add to your `.travis.yml` file.
-```yml
-language:
-  java
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-```
-
-## Private Repos
-
-Add to your `.travis.yml` file.
-```yml
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
-```
-
-View source and learn more about [Codecov Global Uploader][4]
-
-[1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
-[4]: https://github.com/codecov/codecov-bash
+[0]: https://codecov.io/
+[1]: https://github.com/codecov/example-java
+[2]: https://github.com/codecov/example-gradle
