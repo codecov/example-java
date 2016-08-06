@@ -5,6 +5,8 @@
 2. Call `bash <(curl -s https://codecov.io/bash) -t repository-upload-token` at the end of your CI build
   - Is you repository public and tested with Travis, CircleCI or AppVeyor? Then the repository upload token is not required!
 
+> Also see out [Example Android][3] and [Example Gradle][2] repositories.
+
 
 # Frequently Asked Questions
 
