@@ -8,6 +8,19 @@
 
 # Frequently Asked Questions
 
+####❔How do I enable multi-module projects?
+
+In your `pom.xml` file please append a list of modules in your projects
+
+```xml
+<project>
+  <modules>
+    <module>module_a/</module>
+    <module>model_b/</module>
+  </modules>
+</project>
+```
+
 ####❔Seeing `Skipping JaCoCo execution due to missing execution data file`?
 
 Please see [http://stackoverflow.com/questions/18107375/...](http://stackoverflow.com/questions/18107375/getting-skipping-jacoco-execution-due-to-missing-execution-data-file-upon-exec)
