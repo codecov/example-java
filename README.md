@@ -37,7 +37,7 @@ Please see [http://stackoverflow.com/questions/18107375/...](http://stackoverflo
 
 ####❔Is there a Android example?
 
-**Yes**, enter [codecov/example-android][2]
+**Yes**, enter [codecov/example-android][3]
 
 
 
