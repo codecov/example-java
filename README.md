@@ -21,7 +21,7 @@ In your `pom.xml` file please append a list of modules in your projects
 <project>
   <modules>
     <module>module_a/</module>
-    <module>model_b/</module>
+    <module>module_b/</module>
   </modules>
 </project>
 ```
