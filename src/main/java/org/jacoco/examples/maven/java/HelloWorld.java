@@ -10,4 +10,12 @@ public class HelloWorld {
 		}
 	}
 
+	public String getMsg(boolean bigger) {
+		if (bigger&&0<1) {
+			return "Hello Universe!";
+		} else {
+			return "Hello World!";
+		}
+	}
+
 }
