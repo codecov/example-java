@@ -1,5 +1,23 @@
 language: java
 sudo: false # faster builds
 
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+env:
+  - export CODACY_PROJECT_TOKEN=1dd44f6b763b4682b450bb977eacc3b1
+
+before_install:
+  - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar >jpm4j.jar
+  - java -jar jpm4j.jar -u init
+#  - ~/jpm/bin/jpm install com.codacy:codacy-coverage-reporter:assembly
+  - java -cp codacy-coverage-reporter-assembly-<version>.jar com.codacy.CodacyCoverageReporter -l Java -r jacoco.xml
+
+install: true
+
+#script:
+# ./mvnw package
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+#  - bash <(curl -s https://codecov.io/bash)
+  - ~/jpm/bin/codacy-coverage-reporter -l Java -r target/site/jacoco/jacoco.xml
+  - mvn clean test jacoco:report coveralls:report
