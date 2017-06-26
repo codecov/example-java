@@ -1,5 +1,11 @@
 language: java
 sudo: false # faster builds
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+test:
+  override:
+    - sbt clean coverage test
+    - sbt coverageReport
+    - sbt coverageAggregate
+    - sbt codacyCoverage
