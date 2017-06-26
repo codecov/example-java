@@ -24,6 +24,8 @@ public class HelloWorld {
         } else {
             return "Hello World!";
         }
-    }
 
+        if (bigger&&0<1)
+            return "Hello World!";
+    }
 }
