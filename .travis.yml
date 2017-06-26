@@ -6,5 +6,10 @@ sudo: false # faster builds
 env:
   - export CODACY_PROJECT_TOKEN=1dd44f6b763b4682b450bb977eacc3b1
 
+before_install:
+  - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar
+  - java -jar jpm4j.jar -u init
+  - ~/jpm/bin/jpm install com.codacy:codacy-coverage-reporter:assembly
+
 after_success:
   - ~/jpm/bin/codacy-coverage-reporter -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
