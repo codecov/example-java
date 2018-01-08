@@ -4,7 +4,7 @@
 ## Guide
 ### Travis Setup
 
-Add the following to your `travis.yml`:
+Add the following to your `.travis.yml`:
 ```yml
 language:
   LANG_FOR_REPO
@@ -15,13 +15,12 @@ after_success:
 1. Add JaCoCo Plugin to your pom.xml file, [see here](https://github.com/codecov/example-java/blob/master/pom.xml#L38-L56)
 ## Caveats
 #### Private Repo
-You will need to add the following your `travis.yml`:
+You will need to add the following your `.travis.yml`:
 ```yml
 env:
   global:
     - CODECOV_TOKEN=:uuid-repo-token
 ```
-We can add more caveats for the language/framework(s) here
 
 ## Support
 
