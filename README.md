@@ -22,7 +22,7 @@ env:
   global:
     - CODECOV_TOKEN=:uuid-repo-token
 ```
-#### JaCoCo reports
+#### JaCoCo Reports
 - Make sure you are on the most up-to-date JaCoCo version. There are issues with previous versions of JaCoCo.
 - JaCoCo reports can expire - Codecov will reject reports that are older than 12 hours. The logs contain details if a report expired.
 ## Support
