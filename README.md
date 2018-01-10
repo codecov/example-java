@@ -1,5 +1,6 @@
 
 
+
 # [Codecov][0] Java Example
 ## Guide
 ### Travis Setup
@@ -21,7 +22,9 @@ env:
   global:
     - CODECOV_TOKEN=:uuid-repo-token
 ```
-
+#### JaCoCo reports
+- Make sure you are on the most up-to-date JaCoCo version. There are issues with previous versions of JaCoCo.
+- JaCoCo reports can expire - Codecov will reject reports that are older than 12 hours. The logs contain details if a report expired.
 ## Support
 
 ### FAQ
@@ -39,6 +42,7 @@ env:
 - Q: Does Codecov accept `jacoco.exec` reports?<br/>A: **No**, these files are not supported. Please produce a `xml` file as detailed in the pom.xml file at [codecov/example-java][1].
 - Q: Is there a Gradle example?<br/>A: **Yes**, enter [codecov/example-gradle][2]
 - Q: Is there a Andorid example?<br/>A: **Yes**, enter [codecov/example-android][3]
+- Q: Is there a Maven example?<br/>A: **Yes**, enter [codecov/example-maven][4]
 
 ### Contact
 - Intercom (in-app messanger)
@@ -50,7 +54,6 @@ env:
 1. More documentation at https://docs.codecov.io
 2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 3. View source and learn more about [Codecov Global Uploader](https://github.com/codecov/codecov-bash)
-
 
 [0]: https://codecov.io/
 [1]: https://github.com/codecov/example-java
