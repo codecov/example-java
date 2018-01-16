@@ -2,19 +2,23 @@
 
 
 # [Codecov][0] Java Example
+
 ## Guide
+
 ### Travis Setup
 
 Add the following to your `.travis.yml`:
 ```yml
-language:
-  LANG_FOR_REPO
+language: java
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
+
 ### Produce Coverage Reports
 1. Add JaCoCo Plugin to your pom.xml file, [see here](https://github.com/codecov/example-java/blob/master/pom.xml#L38-L56)
+
 ## Caveats
+
 #### Private Repo
 You will need to add the following your `.travis.yml`:
 ```yml
@@ -22,9 +26,12 @@ env:
   global:
     - CODECOV_TOKEN=:uuid-repo-token
 ```
+
 #### JaCoCo Reports
+
 - Make sure you are on the most up-to-date JaCoCo version. There are issues with previous versions of JaCoCo.
 - JaCoCo reports can expire - Codecov will reject reports that are older than 12 hours. The logs contain details if a report expired.
+
 ## Support
 
 ### FAQ
@@ -46,8 +53,8 @@ env:
 
 ### Contact
 - Intercom (in-app messanger)
-- Email: support@codecov.io
-- Slack: slack.codecov.io
+- Email: [support@codecov.io](mailto:support@codecov.io)
+- Slack: [slack.codecov.io](https://slack.codecov.io)
 - [gh/codecov/support](https://github.com/codecov/support)
 
 
