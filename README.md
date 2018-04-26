@@ -51,16 +51,11 @@ env:
 - Q: Is there a Andorid example?<br/>A: **Yes**, enter [codecov/example-android][3]
 - Q: Is there a Maven example?<br/>A: **Yes**, enter [codecov/example-maven][4]
 
-### Contact
-- Intercom (in-app messanger)
-- Email: [support@codecov.io](mailto:support@codecov.io)
-- Slack: [slack.codecov.io](https://slack.codecov.io)
-- [gh/codecov/support](https://github.com/codecov/support)
-
-
 1. More documentation at https://docs.codecov.io
 2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
 3. View source and learn more about [Codecov Global Uploader](https://github.com/codecov/codecov-bash)
+
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [0]: https://codecov.io/
 [1]: https://github.com/codecov/example-java
