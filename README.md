@@ -48,7 +48,7 @@ env:
 - We should talk about using other CIs here.
 - Q: Does Codecov accept `jacoco.exec` reports?<br/>A: **No**, these files are not supported. Please produce a `xml` file as detailed in the pom.xml file at [codecov/example-java][1].
 - Q: Is there a Gradle example?<br/>A: **Yes**, enter [codecov/example-gradle][2]
-- Q: Is there a Andorid example?<br/>A: **Yes**, enter [codecov/example-android][3]
+- Q: Is there a Android example?<br/>A: **Yes**, enter [codecov/example-android][3]
 - Q: Is there a Maven example?<br/>A: **Yes**, enter [codecov/example-maven][4]
 
 1. More documentation at https://docs.codecov.io
