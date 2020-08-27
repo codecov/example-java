@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/codecov/example-java.svg?branch=master)](https://travis-ci.org/codecov/example-java)
 [![codecov](https://codecov.io/gh/codecov/example-java/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/example-java)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java?ref=badge_shield)
 
 ## Guide
 
@@ -63,3 +64,7 @@ We are happy to help if you have any questions. Please contact email our Support
 [3]: https://github.com/codecov/example-android
 [4]: https://github.com/codecov/example-java-maven
 [5]: https://docs.codecov.io/docs/about-the-codecov-bash-uploader#section-upload-token
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java?ref=badge_large)
