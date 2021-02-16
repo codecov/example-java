@@ -16,7 +16,7 @@ after_success:
 ```
 
 ### Produce Coverage Reports
-1. Add JaCoCo Plugin to your pom.xml file, [see here](https://github.com/codecov/example-java/blob/master/pom.xml#L38-L56)
+1. Add JaCoCo Plugin to your pom.xml file, [see here](https://github.com/codecov/example-java/blob/master/pom.xml#L43-L61)
 
 ## Caveats
 
