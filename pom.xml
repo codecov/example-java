@@ -21,7 +21,7 @@
 	<packaging>jar</packaging>
 
 	<name>JaCoCo Maven plug-in example for Java project</name>
-	<url>http://www.eclemma.org/jacoco</url>
+	<url>https://github.com/husofskyzy/example-java</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
