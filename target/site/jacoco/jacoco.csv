@@ -1,0 +1,3 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Maven plug-in example for Java project,org.jacoco.examples.maven.java,HelloWorld2,7,0,0,0,3,0,2,0,2,0
+JaCoCo Maven plug-in example for Java project,org.jacoco.examples.maven.java,HelloWorld,2,7,1,1,1,3,1,2,0,2
