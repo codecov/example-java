@@ -35,9 +35,4 @@ public class HelloWorld3Test {
         subject = new HelloWorld();
     }
 
-    @Test
-    public void testShow() {
-        assertEquals("Hello World!", subject.getMessage(false));
-    }
-
 }
