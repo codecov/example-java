@@ -8,7 +8,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+env:
+  global: 
+    - CODECOV_TOKEN=: d4873def-9d08-4642-a409-58a3fa696da8
 jobs:
   build:
 
