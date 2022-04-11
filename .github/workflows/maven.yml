@@ -25,3 +25,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - uses: codecov/codecov-action@v1
+      with:
+        token: d4873def-9d08-4642-a409-58a3fa696da8
