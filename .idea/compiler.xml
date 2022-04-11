@@ -9,5 +9,9 @@
         <module name="org.jacoco.examples.maven.java" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="codecov-test1" target="1.5" />
+      <module name="codecov-test2" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
