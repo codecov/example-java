@@ -18,7 +18,7 @@
 	<groupId>org.jacoco</groupId>
 	<artifactId>org.jacoco.examples.maven.java</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>JaCoCo Maven plug-in example for Java project</name>
 	<url>http://www.eclemma.org/jacoco</url>
