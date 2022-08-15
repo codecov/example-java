@@ -1,4 +1,4 @@
-package io.codecov;
+package calculator;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,6 @@ import org.junit.Test;
 public class CalculatorTest {
   @Test
   public void testAdd() {
-    assertEquals(new Calculator.add(1, 1), 2);
+    assertEquals(new Calculator().add(1, 1), 2);
   }
 }
