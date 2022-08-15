@@ -1,4 +1,4 @@
-name: Workflow for Codecov example-java
+name: Workflow for Codecov example-java using Maven
 on: [push, pull_request]
 jobs:
   run:
@@ -10,6 +10,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 18
+      - name: Install dependencies
+        run: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
       - name: Test with Maven
         run: mvn -B test --file pom.xml
       - name: ls
